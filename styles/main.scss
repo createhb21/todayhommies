@@ -11,5 +11,15 @@
 @import './mixins/responsive';
 @import './mixins/positions';
 @import './mixins/flexbox';
+@import './mixins/star-rating';
+
+@import './modules/tags';
+@import './modules/avatars';
+@import './modules/buttons';
+@import './modules/forms';
+@import './modules/icons';
+@import './modules/pagination';
+@import './modules/prices';
+@import './modules/star-ratings';
 
 @import './layouts/grids';

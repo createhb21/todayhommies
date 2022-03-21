@@ -373,17 +373,18 @@ template {
 
 * {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box; }
 
 html {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 1rem; }
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px; }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif; }
+  font-family: "Noto Sans KR", sans-serif;
+  color: #3f4150; }
 
 h1 {
   margin: 0; }

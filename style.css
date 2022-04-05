@@ -1133,9 +1133,16 @@ i {
       margin-right: 24px; } }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
   width: 240px;
+  height: 100vh;
   padding: 32px 20px;
-  background-color: #fff; }
+  overflow-y: auto;
+  background-color: #fff;
+  overscroll-behavior: contain; }
   .sidebar-header {
     padding: 0 12px; }
     .sidebar-header .logo {
@@ -1197,5 +1204,16 @@ i {
       padding: 0 12px; }
       .sidebar-user-menu .user-menu-item a:active {
         color: #3da5f5; }
+  .sidebar::-webkit-scrollbar {
+    display: none; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(63, 65, 80, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

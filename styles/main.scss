@@ -8,13 +8,14 @@
 @import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
-@import './base/globlas';
+@import './base/globals';
 
 @import './mixins/text-style';
 @import './mixins/responsive';
 @import './mixins/positions';
 @import './mixins/flexbox';
 @import './mixins/star-rating';
+@import './mixins/scrollbar';
 
 @import './modules/tags';
 @import './modules/avatars';

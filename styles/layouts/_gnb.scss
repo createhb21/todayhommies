@@ -95,11 +95,34 @@
 
   @include responsive(D) {
     // 1200px
+    &-search {
+      width: 264px;
+      position: relative;
+      margin-right: 24px;
 
-    &-right {
       .input-group {
-        width: 264px;
-        margin-right: 24px;
+        width: 100%;
+      }
+
+      .search-history {
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        display: none;
+        padding: 16px 8px 0 8px;
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+        box-shadow: $dropdown-shadow;
+
+        &.is-active {
+          display: block;
+        }
+
+        &-header {
+          padding: 0 8px;
+        }
       }
     }
   }

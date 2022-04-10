@@ -1278,6 +1278,8 @@ i {
         .product-info-price .discount-rate .rate {
           font-size: 44px;
           line-height: 36px; }
+        .product-info-price .discount-rate .percent {
+          line-height: 1; }
       .product-info-price .info-sale-price {
         margin-bottom: 0; }
         .product-info-price .info-sale-price .price-32 {
@@ -1293,6 +1295,109 @@ i {
   @media screen and (min-width: 1200px) {
     .product-info {
       margin-bottom: 20px; } }
+
+.order-form .order-inputs,
+.order-form .order-checkouts,
+.order-form .order-summary {
+  margin-bottom: 20px; }
+
+.order-form .order-inputs .select-group {
+  margin-bottom: 8px; }
+  .order-form .order-inputs .select-group:last-child {
+    margin-bottom: 0; }
+
+.order-form .order-checkouts .checkout-item {
+  margin-bottom: 8px; }
+  .order-form .order-checkouts .checkout-item:last-child {
+    margin-bottom: 0; }
+
+.order-form .order-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .order-form .order-summary dt {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #191a20;
+    font-weight: 700; }
+
+.order-form .button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .order-form .button-group button {
+    width: 50%;
+    margin-right: 8px; }
+    .order-form .button-group button:last-child {
+      margin-right: 0; }
+
+.checkout-card {
+  position: relative;
+  padding: 8px 10px 8px 12px;
+  background-color: #f7f8fa;
+  border-radius: 4px; }
+  .checkout-card .checkout-header {
+    margin-bottom: 8px; }
+  .checkout-card .checkout-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    padding-right: 26px;
+    font-weight: 400; }
+  .checkout-card .delete-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #8c8d96; }
+    .checkout-card .delete-button:hover, .checkout-card .delete-button:active {
+      opacity: 0.4; }
+  .checkout-card .checkout-select {
+    position: relative;
+    display: inline-block; }
+    .checkout-card .checkout-select:hover select {
+      border-color: #b2b3b9; }
+    .checkout-card .checkout-select:hover i {
+      color: #8c8d96; }
+    .checkout-card .checkout-select select {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #3f4150;
+      width: 72px;
+      height: 24px;
+      padding: 0 8px;
+      line-height: 1;
+      background-color: #fff;
+      border: 1px solid #e0e2e7;
+      border-radius: 3px;
+      transition: border-color 100ms ease-in-out;
+      appearance: none; }
+    .checkout-card .checkout-select i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2px;
+      font-size: 20px;
+      color: #b2b3b9;
+      pointer-events: none;
+      transition: color 100ms ease-in-out; }
+  .checkout-card .checkout-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  @media screen and (min-width: 1200px) {
+    .checkout-card .checkout-title {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em; } }
 
 .container {
   width: 100%;

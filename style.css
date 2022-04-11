@@ -1254,7 +1254,8 @@ i {
       margin-bottom: 2px; }
   @media screen and (min-width: 768px) {
     .product-info {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 40px; }
       .product-info-header .info-brand {
         display: inline-block;
         margin-bottom: 8px; }

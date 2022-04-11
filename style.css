@@ -1400,6 +1400,25 @@ i {
       line-height: 24px;
       letter-spacing: -0.01em; } }
 
+.product-section {
+  padding-bottom: 20px; }
+  .product-section-divider {
+    height: 8px;
+    margin: 0 -15px;
+    background-color: #e0e2e7; }
+    .product-section-divider.is-big {
+      height: 24px; }
+  @media screen and (min-width: 768px) {
+    .product-section {
+      width: 100%;
+      max-width: 692px;
+      padding-bottom: 80px;
+      margin-right: auto;
+      margin-left: auto; } }
+  @media screen and (min-width: 1200px) {
+    .product-section {
+      margin-left: 0; } }
+
 .product-section-header {
   display: flex;
   align-items: center;

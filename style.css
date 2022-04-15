@@ -1755,6 +1755,25 @@ i {
     .review-card-header .username:hover {
       opacity: 0.4; } }
 
+.product-review .review-empty {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8c8d96;
+  padding: 36px 0;
+  text-align: center; }
+  .product-review .review-empty strong {
+    color: #3da5f5; }
+
+.product-review .review-item {
+  border-bottom: 1px solid #e0e2e7; }
+  .product-review .review-item:last-child {
+    border-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  .product-review .review-empty {
+    padding: 16px 0; } }
+
 .container {
   width: 100%;
   padding: 0 5px;

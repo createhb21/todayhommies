@@ -1886,6 +1886,16 @@ i {
         line-height: 24px;
         letter-spacing: -0.01em; } }
 
+@media screen and (max-width: 767px) {
+  .product-shipment.is-open .product-section,
+  .product-shipment.is-open .product-section-divider:last-child {
+    display: block; }
+  .product-shipment.is-open .product-section-header.sm-only {
+    display: none; }
+  .product-shipment .product-section,
+  .product-shipment .product-section-divider:last-child {
+    display: none; } }
+
 .container {
   width: 100%;
   padding: 0 5px;

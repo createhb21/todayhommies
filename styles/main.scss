@@ -17,6 +17,7 @@
 @import './mixins/flexbox';
 @import './mixins/star-rating';
 @import './mixins/scrollbar';
+@import './mixins/line-clamp';
 
 @import './modules/tags';
 @import './modules/avatars';
@@ -48,6 +49,8 @@
 @import './components/product-inquiry';
 @import './components/inquiry-card';
 @import './components/product-shipment';
+@import './components/product-card';
+@import './components/product-recommendation';
 
 @import './layouts/grids';
 @import './layouts/gnb';

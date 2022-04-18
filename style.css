@@ -2076,6 +2076,87 @@ i {
     .gallery-card-detail .username:hover {
       color: #3da5f5; } }
 
+.user-gallery {
+  margin: 0 -15px;
+  overflow: hidden; }
+  .user-gallery-slider {
+    position: relative;
+    margin-bottom: 4px; }
+  .user-gallery-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 52px; }
+    .user-gallery-controls .control-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 28px;
+      color: #3f4150;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out; }
+      .user-gallery-controls .control-button.is-prev i {
+        margin-left: -2px;
+        transform: rotate(90deg); }
+      .user-gallery-controls .control-button.is-next i {
+        margin-right: -2px;
+        transform: rotate(-90deg); }
+      .user-gallery-controls .control-button:hover {
+        color: #fff;
+        background-color: #3da5f5; }
+      .user-gallery-controls .control-button[disabled] {
+        visibility: hidden; }
+  .user-gallery .thumbnail-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2px;
+    overflow-x: auto; }
+    .user-gallery .thumbnail-list::-webkit-scrollbar {
+      display: none; }
+  .user-gallery .thumbnail-item {
+    margin-right: 4px; }
+    .user-gallery .thumbnail-item.tns-nav-active button {
+      border: 3px solid #3da5f5; }
+    .user-gallery .thumbnail-item:last-child {
+      margin-right: 0; }
+    .user-gallery .thumbnail-item button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      border-radius: 4px; }
+      .user-gallery .thumbnail-item button img {
+        display: block;
+        width: 64px;
+        height: 64px;
+        object-fit: cover; }
+  @media screen and (min-width: 768px) {
+    .user-gallery {
+      margin: 0; }
+      .user-gallery-slider {
+        margin-bottom: 6px; }
+      .user-gallery .thumbnail-list {
+        padding-left: 0; }
+      .user-gallery .thumbnail-item {
+        margin-right: 6px; }
+        .user-gallery .thumbnail-item button {
+          width: 75px;
+          height: 75px; }
+          .user-gallery .thumbnail-item button img {
+            width: 75px;
+            height: 75px; } }
+
 .container {
   width: 100%;
   padding: 0 5px;

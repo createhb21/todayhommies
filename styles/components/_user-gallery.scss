@@ -1,0 +1,116 @@
+.user-gallery {
+  margin: 0 -#{$grid-margin};
+  overflow: hidden;
+
+  &-slider {
+    position: relative;
+    margin-bottom: 4px;
+  }
+
+  &-controls {
+    @include pos-center;
+    @include flexbox(between);
+    width: 100%;
+    padding: 0 52px;
+
+    .control-button {
+      @include flexbox;
+      width: 40px;
+      height: 40px;
+      font-size: 28px;
+      color: $primary;
+      background-color: $white;
+      border-radius: 50%;
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+
+      &.is-prev {
+        i {
+          margin-left: -2px;
+          transform: rotate(90deg);
+        }
+      }
+
+      &.is-next {
+        i {
+          margin-right: -2px;
+          transform: rotate(-90deg);
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+
+      &[disabled] {
+        // disabled이라는 속성을 받았을 때 적용
+        visibility: hidden;
+      }
+    }
+  }
+
+  .thumbnail-list {
+    @include flexbox(start);
+    padding-left: 2px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .thumbnail-item {
+    margin-right: 4px;
+
+    &.tns-nav-active {
+      button {
+        border: 3px solid $blue;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    button {
+      @include flexbox;
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      border-radius: 4px;
+
+      img {
+        display: block;
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    margin: 0;
+
+    &-slider {
+      margin-bottom: 6px;
+    }
+
+    .thumbnail-list {
+      padding-left: 0;
+    }
+
+    .thumbnail-item {
+      margin-right: 6px;
+
+      button {
+        width: 75px;
+        height: 75px;
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
+}

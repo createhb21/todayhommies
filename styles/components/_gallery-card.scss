@@ -47,6 +47,7 @@
     }
 
     .username {
+      @include truncate;
       flex-grow: 1;
       padding-right: 8px;
       font-weight: 700;

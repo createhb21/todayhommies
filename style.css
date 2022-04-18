@@ -2062,6 +2062,9 @@ i {
       .gallery-card-detail .avatar-32:active {
         opacity: 0.4; }
     .gallery-card-detail .username {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       flex-grow: 1;
       padding-right: 8px;
       font-weight: 700; }
@@ -2287,10 +2290,10 @@ i {
     flex-shrink: 0;
     margin-right: 8px; }
   .sidebar-user .username {
-    flex-grow: 1;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    flex-grow: 1; }
   .sidebar-auth {
     display: flex;
     align-items: center;

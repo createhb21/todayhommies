@@ -2044,7 +2044,7 @@ i {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 54px;
+    height: 50px;
     padding: 0 16px;
     background-color: rgba(0, 0, 0, 0.4); }
     .gallery-card-detail .avatar-32,
@@ -2052,7 +2052,7 @@ i {
       flex-shrink: 0; }
     .gallery-card-detail .username,
     .gallery-card-detail .order {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 24px;
       letter-spacing: -0.01em;
       color: #fff; }

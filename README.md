@@ -9,8 +9,8 @@
 
 
 > 🌱 **Stack**
->> Html + css + Javascript <br />
->>  Library : Sass(scss), tiny-slider <br />
+>> Html + Css + Javascript <br />
+>>  Library : Sass(scss), lodash, tiny-slider <br />
 >> Deploy : Netlify <br />
 >> Other : Git / GitHub <br />
 >> Code Quality Tool (ESLint & Prettier)

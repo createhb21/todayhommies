@@ -52,6 +52,7 @@ const productTabPanelList = productTabPanelIdList.map((panelId) => {
   const tabPanel = document.querySelector(`#${panelId}`)
   return tabPanel
 })
+console.log(productTabPanelList)
 const productTabPanelPositionMap = {}
 
 function detectTabPanelPosition() {

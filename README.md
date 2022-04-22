@@ -5,117 +5,21 @@
 > Vanila JS와 SCSS으로 '오늘의 집' 클론 코딩<br />
 > (부제: Sass 연습 해보고 싶었던 사람)
 
-## Demo 
-🏡 [hommies app](https://hommies.netlify.app/)
+## 🔧 사용 기술 및 스택
 
-## 🔧 기술 스택
-
-- HTML,CSS
-- JavaScript(ES6+)
-- SCSS
+- Stack
+    - Html + css
+    - Javascript
+    - Sass (scss)
+    - Library : tiny-slider 
+    - Deploy : Netlify
+    - Other : Git / GitHub
+    - Code Quality Tool (ESLint & Prettier)
 
 ---
 
-### 1. GNB
+## 🧳 구현 후기 및 문제해결 과정
 
-- 로그인을 하지 않은 경우
-
-```html
-<div class="button-group">
-  <button
-    class="gnb-icon-button is-search lg-hidden"
-    type="button"
-    aria-label="검색창 열기 버튼"
-  >
-    <i class="ic-search"></i>
-  </button>
-  <a
-    class="gnb-icon-button is-cart"
-    href="/"
-    aria-label="장바구니로 페이지로 이동"
-  >
-    <i class="ic-cart"></i>
-    <strong class="badge">5</strong>
-  </a>
-
-  <div class="gnb-auth sm-hidden">
-    <a href="/"> 로그인 </a>
-    <a href="/"> 회원가입 </a>
-  </div>
-</div>
-```
-
-<br />
-
-- 로그인을 했을 경우
-
-```html
-<div class="button-group">
-  <button
-    class="gnb-icon-button is-search lg-hidden"
-    type="button"
-    aria-label="검색창 열기 버튼"
-  >
-    <i class="ic-search"></i>
-  </button>
-
-  <a
-    class="gnb-icon-button sm-hidden"
-    href="/"
-    aria-label="스크랩북 페이지로 이동"
-  >
-    <i class="ic-bookmark"></i>
-  </a>
-
-  <a
-    class="gnb-icon-button sm-hidden"
-    href="/"
-    aria-label="내 소식 페이지로 이동"
-  >
-    <i class="ic-bell"></i>
-  </a>
-
-  <a
-    class="gnb-icon-button is-cart"
-    href="/"
-    aria-label="장바구니로 페이지로 이동"
-  >
-    <i class="ic-cart"></i>
-    <strong class="badge">5</strong>
-  </a>
-
-  <button
-    class="gnb-avatar-button sm-hidden"
-    type="button"
-    aria-label="마이메뉴 열기 버튼"
-  >
-    <div class="avatar-32">
-      <img src="./assets/images/img-user-01.jpg" alt="유저 프로필 버튼" />
-    </div>
-  </button>
-</div>
-```
-
-### 2. Sidebar
-
-- 로그인을 하지 않은 경우
-
-```html
-<div class="sidebar-auth">
-  <a class="btn-outlined btn-40" href="/">로그인</a>
-  <a class="btn-primary btn-40" href="/">회원가입</a>
-</div>
-```
-
-- 로그인을 한 경우
-
-```html
-<div class="sidebar-user">
-  <a href="/">
-    <div class="avatar-24">
-      <img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨" />
-    </div>
-    <strong class="username">사달라</strong>
-  </a>
-</div>
-```
+- [프론트엔드 개발자의 CSS 체크리스트](https://velog.io/@alsghk9701/series/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-CSS-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+- [한번쯤 되돌아볼만한 키워드 리스트](https://velog.io/@alsghk9701/%ED%95%9C%EB%B2%88%EC%AF%A4-%EB%90%98%EB%8F%8C%EC%95%84%EB%B3%BC%EB%A7%8C%ED%95%9C-%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+- [빵부스러기 노션 정리](https://quilt-psychology-4c4.notion.site/css-ff00e68fc8f2428d85f2e0f60c429dc8)

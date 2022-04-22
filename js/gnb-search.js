@@ -33,8 +33,8 @@ function openGnbSearchHistory() {
 gnbSearchInput.addEventListener('focus', openGnbSearchHistory)
 
 function deleteAllSearchHistoryItems() {
-  gnbSearchHistoryList.innerHTML = ''
   closeGnbSearchHistory()
+  gnbSearchHistoryList.innerHTML = ''
 }
 
 deleteAllButton.addEventListener('click', deleteAllSearchHistoryItems)
